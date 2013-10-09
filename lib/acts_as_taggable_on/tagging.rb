@@ -1,5 +1,6 @@
 module ActsAsTaggableOn
   class Tagging < ::ActiveRecord::Base #:nodoc:
+    self.table_name = "taggable_tagging"
     attr_accessible :tag,
                     :tag_id,
                     :context,

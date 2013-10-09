@@ -1,5 +1,8 @@
 module ActsAsTaggableOn
   class Tag < ::ActiveRecord::Base
+
+    self.table_name = "taggable_tag"
+
     include ActsAsTaggableOn::Utils
 
     attr_accessible :name if defined?(ActiveModel::MassAssignmentSecurity)
