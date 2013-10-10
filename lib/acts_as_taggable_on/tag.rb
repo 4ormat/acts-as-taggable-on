@@ -1,7 +1,7 @@
 module ActsAsTaggableOn
   class Tag < ::ActiveRecord::Base
 
-    self.table_name = "taggable_tag"
+    self.table_name = "taggable_tags"
 
     include ActsAsTaggableOn::Utils
 
