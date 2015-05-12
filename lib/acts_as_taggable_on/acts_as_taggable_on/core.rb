@@ -297,7 +297,7 @@ module ActsAsTaggableOn::Taggable
         add_custom_context(context)
 
         variable_name = "@#{context.to_s.singularize}_list"
-        process_dirty_object(context, new_list) unless custom_contexts.include?(context.to_s)
+        #process_dirty_object(context, new_list) unless custom_contexts.include?(context.to_s)
 
         instance_variable_set(variable_name, ActsAsTaggableOn::TagList.from(new_list))
       end
